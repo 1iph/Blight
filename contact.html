@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blight Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <img src="Images/Adobe Express - file.png" class="logo" alt="Logo">
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="story.html">OUR STORY</a>
+            <a href="staff.html">STAFF</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section id="our story" class="about-guild">
+        <div class="about-content">
+            <div class="header">
+                <h1>Contact us!</h1>
+                <img src="Images/Header.webp" class="header-bar">
+                
+            </div>
+            
+            <div class="card">
+                <div class="info">
+                    <h2>Our discord</h2>
+                    <p>
+                        If you're planning on joining the guild or want to get to know the community a little, consider joining our discord. There are staff on 24/7 to help with any inquiries.
+                        <br> <button class="Join-us" onclick="window.location.href='https://discord.gg/pytsATj4gW'">
+                            JOIN US
+                        </button>
+                        
+                         
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menuLinks = document.querySelector(".menu-links");
+    
+            menuToggle.addEventListener("click", function () {
+                menuLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+        });
+    </script>
+    
+    <footer>
+        <p>&copy; 2018 Blight Guild. All rights reserved.</p>
+    </footer>
+</body>
+</html>

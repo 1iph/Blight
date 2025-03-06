@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blight Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <img src="Images/Adobe Express - file.png" class="logo" alt="Logo">
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="story.html">OUR STORY</a>
+            <a href="staff.html">STAFF</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <section id="our story" class="about-guild">
+        <div class="about-content">
+            <div class="header">
+                <h1>OUR STORY</h1>
+                <img src="Images/Header.webp" class="header-bar">
+                
+            </div>
+            
+            <div class="card">
+                <div class="info">
+                    <h2>A little bit about our history</h2>
+                    <p>
+                        Blight was made by BlackVelocity on 04/11/2018. When the guild was first made, it was called Project Exodus. Around 06/06/2019, we decided to rename ourselves to Blight. Like some other guilds, we started out as a friend’s group and had no intention of climbing the leaderboards. As we grew bigger, we decided to start clawing our way through the leaderboards. We started at the bottom of the list, but we grew more and more over time. Blight has always been a community guild and despite losing focus of that in certain times through various Guild Master transitions, we're now back to focusing on the heart of our guild and intend to continuously grow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menuLinks = document.querySelector(".menu-links");
+    
+            menuToggle.addEventListener("click", function () {
+                menuLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+        });
+    </script>
+    <footer>
+        <p>&copy; 2018 Blight Guild. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
